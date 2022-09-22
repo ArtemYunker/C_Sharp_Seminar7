@@ -31,12 +31,6 @@ int a = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите номер столбца j");
 int b = int.Parse(Console.ReadLine()!);
 
-
-
-
-
-
-
 FindElement(array);
 
 
@@ -50,7 +44,6 @@ void FillArray(int[,] array)
 
         }
     }
-
 }
 
 void PrintArray(int[,] array)
@@ -65,19 +58,15 @@ void PrintArray(int[,] array)
     }
 }
 
-
-
-
 void FindElement(int[,] array)
 {
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            if (a == i+1 && b == j+1) Console.WriteLine($"Элемент с номером [{i+1},{j+1}] = {array[i, j]}");
+            if (a == i + 1 && b == j + 1) Console.WriteLine($"Элемент с номером [{i + 1},{j + 1}] = {array[i, j]}");
 
         }
     }
     if (a > m || b > n) Console.WriteLine("такого числа в массиве нет");
-
 }
